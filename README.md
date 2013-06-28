@@ -1,6 +1,6 @@
 # Git vs Git
 
-Simple jquery *widget* that displays a stats table comparing multiple GitHub repositories (**created, updated, watchers, forks, open issues**).
+Simple jquery *widget* that displays a stats table comparing multiple GitHub repositories.
 
 ## Example
 
@@ -17,7 +17,7 @@ Simple jquery *widget* that displays a stats table comparing multiple GitHub rep
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 		<script src="jquery.gvg.min.js"></script>
 
-3. [*optional*] Default widget styling can be overwritten with CSS. Inspect generated table to style.
+3. [ *optional* ] Default widget styling can be overwritten with CSS. Inspect generated table to style.
 
 		<style>
 			div.gvg{ width:900px; }
@@ -27,5 +27,9 @@ Simple jquery *widget* that displays a stats table comparing multiple GitHub rep
 
 ## Requires
 
-* jQuery v1.6.0 and up.
+* jQuery v1.6.0 and up
 * Major browsers, but IE 9+
+
+## License
+
+The MIT License (MIT).
