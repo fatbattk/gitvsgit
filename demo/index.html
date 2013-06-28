@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Git vs Git Demo</title>
+	<style type="text/css">
+		body
+		{
+			background-color:#FFF;
+			color:#000;
+			font:12px arial;
+		}
+		textarea
+		{
+			height:20px;
+			width:70%;
+			font-size:11px;
+		}
+		/* custom CSS override for Dark theme*/
+		#gvg-ring-1 td, #gvg-ring-1 td a
+		{
+			background-color:#3E3F41;
+			color:#F7F7F7;
+		}
+		#gvg-ring-1 thead th, #gvg-ring-1 tfoot th, #gvg-ring-1 tfoot th a
+		{
+			background-color:#030000;
+			color:#F7F7F7;
+		}
+		#gvg-ring-1 thead th
+		{
+			background-image:-moz-linear-gradient(#030000,#2C2918);
+		}
+	</style>
+</head>
+<body>
+	<h1>Git vs Git</h1><hr />
+	Inspired by the too-many-MV* framework choices.<br />
+	I needed a quick overview comparison of multiple GitHub repos and made this <em>widget</em> to serve that purpose. Hope others find a use for it as well! :)
+
+	<h2>Quick Start:</h2>
+	<ol>
+		<li>Create a &lt;div> with class name of "gvg" and attribute "data-repos" containing <em>comma-delimited</em> repositories. (<strong>Note:</strong> full user and repo name required)</li>
+		<li>Include jquery + javascript files.</li>
+		<li>[<em>optional</em>] Default widget styling can be overwritten with CSS. Inspect generated table to style.</li>
+	</ol>
+
+	<h2>Demo:</h2>
+	<h4>Default Style:</h4>
+	<div class="gvg" data-repos="angular/angular.js,documentcloud/backbone,emberjs/ember.js,knockout/knockout"></div>
+	<br /><textarea readonly>&lt;div class="gvg" data-repos="angular/angular.js,documentcloud/backbone,emberjs/ember.js,knockout/knockout">&lt;/div></textarea>
+	<br /><br />
+	<h4>Customized "Dark" Style:</h4>
+	Generated CSS is prepended to &lt;head> so overwriting the styles is possible.
+	<div class="gvg" data-repos="dojo/dojo,jquery/jquery,mootools/mootools-core,sstephenson/prototype,yui/yui3" style="width:800px; background-color:#3E3F41;"></div>
+	<br /><textarea readonly>&lt;div class="gvg" data-repos="dojo/dojo,jquery/jquery,mootools/mootools-core,sstephenson/prototype,yui/yui3" style="background-color:#3E3F41;">&lt;/div></textarea>
+
+	<h2>Requires:</h2>
+	<ul>
+		<li>jQuery 1.6 and above</li>
+		<li>Major browsers, but IE 9+</li>
+	</ul>
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.gvg.min.js"></script>
+</body>
+</html>
