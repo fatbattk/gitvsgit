@@ -1,0 +1,27 @@
+{
+	"name": "gitvsgit",
+	"title": "jQuery Git vs Git",
+	"description": "Simple jquery widget that displays a stats table comparing multiple GitHub repositories",
+	"keywords": [
+		"github",
+		"git",
+		"vs",
+		"compare",
+		"stats"
+	],
+	"version": "0.1.0",
+	"author": {
+		"name": "fatbattk",
+		"url": "http://git.io/XIauew"
+	},
+	"licenses": [
+		{
+			"type": "MIT",
+			"url": "https://github.com/fatbattk/gitvsgit/blob/master/LICENSE"
+		}
+	],
+	"homepage": "http://git.io/XIauew",
+	"dependencies": {
+		"jquery": ">=1.6"
+	}
+}
