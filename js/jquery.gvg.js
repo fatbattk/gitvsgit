@@ -1,4 +1,4 @@
-// gitvsgit jquery widget v 0.1 (http://git.io/XIauew)
+// gitvsgit jquery widget v 0.1.1 (http://git.io/XIauew)
 // by @fatbattk
 
 (function($){
@@ -39,7 +39,7 @@
 
 					$.when.apply(this,gvgaj).done(function(){
 						var gvgtbl = '<table class="'+ gvg_table_class +'" id="'+ gvg_table_class +'-'+ idx +'" border="0" cellspacing="1" cellpadding="2">'
-									+'<thead><tr><th>Repos</th><th>Created</th><th>Updated</th><th>Watchers</th><th>Forks</th><th>Open Issues</th></tr></thead>'
+									+'<thead><tr><th>Repos</th><th>Created</th><th>Updated</th><th>Stars</th><th>Forks</th><th>Open Issues</th></tr></thead>'
 									+'<tfoot><tr><th colspan="6">'+ footer +'</th></tr></tfoot><tbody>';
 
 						var gvga,gvgd;
