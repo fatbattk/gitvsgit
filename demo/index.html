@@ -15,18 +15,18 @@
 			width:70%;
 			font-size:11px;
 		}
-		/* custom CSS override for Dark theme*/
-		#gvg-ring-1 td, #gvg-ring-1 td a
+		/* custom CSS override for Dark theme */
+		#gvg-ring-2 td, #gvg-ring-2 td a
 		{
 			background-color:#3E3F41;
 			color:#F7F7F7;
 		}
-		#gvg-ring-1 thead th, #gvg-ring-1 tfoot th, #gvg-ring-1 tfoot th a
+		#gvg-ring-2 thead th, #gvg-ring-2 tfoot th, #gvg-ring-2 tfoot th a
 		{
 			background-color:#030000;
 			color:#F7F7F7;
 		}
-		#gvg-ring-1 thead th
+		#gvg-ring-2 thead th
 		{
 			background-image:-moz-linear-gradient(#030000,#2C2918);
 		}
@@ -45,12 +45,21 @@
 	</ol>
 
 	<h2>Demo:</h2>
+	Feel free to inspect the table source to see the generated output to tweak.
+
 	<h4>Default Style:</h4>
 	<div class="gvg" data-repos="angular/angular.js,jashkenas/backbone,emberjs/ember.js,knockout/knockout"></div>
 	<br /><textarea readonly>&lt;div class="gvg" data-repos="angular/angular.js,jashkenas/backbone,emberjs/ember.js,knockout/knockout">&lt;/div></textarea>
 	<br /><br />
+
+	<h4>With row highlighting:</h4>
+	Add attribute "data-highlight" with the repo full name. Seperate with commas to highlight more rows.
+	<div class="gvg" data-repos="angular/angular.js,emberjs/ember.js,knockout/knockout" data-highlight="angular/angular.js,knockout/knockout"></div>
+	<br /><textarea readonly>&lt;div class="gvg" data-repos="angular/angular.js,emberjs/ember.js,knockout/knockout" data-highlight="angular/angular.js,knockout/knockout">&lt;/div></textarea>
+	<br /><br />
+
 	<h4>Customized "Dark" Style:</h4>
-	Generated CSS is prepended to &lt;head> so overwriting the styles is possible.
+	Generated CSS is prepended to &lt;head> so overwriting the styles is possible. Table ID has default format of "gvg-ring-<em>#</em>". "#" starts from 0 and increments for each generated table.
 	<div class="gvg" data-repos="dojo/dojo,jquery/jquery,mootools/mootools-core,sstephenson/prototype,yui/yui3" style="width:800px; background-color:#3E3F41;"></div>
 	<br /><textarea readonly>&lt;div class="gvg" data-repos="dojo/dojo,jquery/jquery,mootools/mootools-core,sstephenson/prototype,yui/yui3" style="background-color:#3E3F41;">&lt;/div></textarea>
 
@@ -60,7 +69,7 @@
 		<li>Major browsers, but IE 9+</li>
 	</ul>
 
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script type="text/javascript" src="../js/jquery.gvg.min.js"></script>
 </body>
 </html>
