@@ -7,9 +7,11 @@
 		"git",
 		"vs",
 		"compare",
-		"stats"
+		"stats",
+		"table",
+		"data"
 	],
-	"version": "0.1.0",
+	"version": "0.1.4",
 	"author": {
 		"name": "fatbattk",
 		"url": "http://git.io/XIauew"
