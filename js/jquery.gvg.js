@@ -1,4 +1,4 @@
-// gitvsgit jquery widget v 0.1.2 (http://git.io/XIauew)
+// gitvsgit jquery widget v 0.1.3 (http://git.io/XIauew)
 // by @fatbattk
 
 ;(function($){
@@ -6,7 +6,7 @@
 	if($gvgs.length)
 	{
 		var gvg_table_class = 'gvg-ring',
-			footer = 'made with /<a href="https://github.com/fatbattk/gitvsgit" target="_blank">gitvsgit</a>',
+			footer = 'made with /<a href="http://git.io/XIauew" target="_blank">gitvsgit</a>',
 			i = 0;
 
 		$('head').prepend('<style type="text/css">'
@@ -28,7 +28,7 @@
 				var repo = $repos.split(','),
 					repo_count = repo.length,
 					repo_highlights = [],
-					gvgaj =[];
+					gvgaj = [];
 
 				if($gvg.data('highlight'))
 				{
@@ -87,4 +87,4 @@
 			}
 		});
 	}
-}(jQuery));
+})(jQuery);
